@@ -62,7 +62,7 @@ var DateTimePickers = function() {
 
         // Single picker
         $('.daterange-single').daterangepicker({ 
-            singleDatePicker: true
+            singleDatePicker: true,
         });
 
         // Display date dropdowns
@@ -84,32 +84,6 @@ var DateTimePickers = function() {
                 format: 'MM/DD/YYYY h:mm a'
             }
         });
-
-        // Localization
-        $('.daterange-locale').daterangepicker({
-            applyClass: 'bg-slate-600',
-            cancelClass: 'btn-light',
-            opens: 'left',
-            ranges: {
-                'Сегодня': [moment(), moment()],
-                'Вчера': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                'Последние 7 дней': [moment().subtract(6, 'days'), moment()],
-                'Последние 30 дней': [moment().subtract(29, 'days'), moment()],
-                'Этот месяц': [moment().startOf('month'), moment().endOf('month')],
-                'Прошедший месяц': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-            },
-            locale: {
-                applyLabel: 'Вперед',
-                cancelLabel: 'Отмена',
-                startLabel: 'Начальная дата',
-                endLabel: 'Конечная дата',
-                customRangeLabel: 'Выбрать дату',
-                daysOfWeek: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт','Сб'],
-                monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
-                firstDay: 1
-            }
-        });
-
 
         //
         // Pre-defined ranges and callback
@@ -213,11 +187,12 @@ var DateTimePickers = function() {
 
         // Localization
         $('.pickadate-translated').pickadate({
-            monthsFull: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
-            weekdaysShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
-            today: 'aujourd\'hui',
-            clear: 'effacer',
-            formatSubmit: 'yyyy/mm/dd'
+            monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+            weekdaysShort: ['Dom', 'Lun', 'Mar', 'Mier', 'Juev', 'Vie', 'Sab'],
+            today: 'hoy',
+            clear: 'Limpiar',
+            close: 'Cerrar',
+            formatSubmit: 'dd/mm/yyyy'
         });
 
         // Format options
