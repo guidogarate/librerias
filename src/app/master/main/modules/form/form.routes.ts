@@ -6,21 +6,25 @@ import { SelectComponent } from "./select/select.component";
 
 const formRoutes: Routes = [
   {
+    // ok
     path: "check-radios",
     component: CheckRadiosComponent,
     data: { titulo: "check" }
   },
   {
+    // cambiar por otro (para movil)
     path: "date",
     component: DateComponent,
     data: { titulo: "date" }
   },
   {
+    // ok
     path: "validacion",
     component: ValidacionComponent,
     data: { titulo: "date" }
   },
   {
+    // cambiar por otro (para movil)
     path: "select",
     component: SelectComponent,
     data: { titulo: "date" }

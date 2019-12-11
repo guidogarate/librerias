@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { NgForm } from "@angular/forms";
 import { LoginModels } from "./login.models";
-declare function init_select();
+
 @Component({
   selector: "app-select",
   templateUrl: "./select.component.html",
@@ -22,11 +22,7 @@ export class SelectComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {
-    setTimeout(() => {
-      init_select();
-    }, 1000);
-  }
+  ngOnInit() {}
 
   ingresar(form: NgForm) {
     console.log(this.usuario);
