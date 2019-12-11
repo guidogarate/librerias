@@ -9,7 +9,7 @@ const mainRoutes: Routes = [
   },
   {
     path: "",
-    redirectTo: "/components/form/select",
+    redirectTo: "/components/form/date",
     pathMatch: "full"
   }
   // {

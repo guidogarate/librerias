@@ -24,7 +24,7 @@ const formRoutes: Routes = [
     data: { titulo: "date" }
   },
   {
-    // cambiar por otro (para movil)
+    // ok
     path: "select",
     component: SelectComponent,
     data: { titulo: "date" }
