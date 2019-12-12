@@ -1,6 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { NgForm } from "@angular/forms";
 import { LoginModels } from "./login.models";
+import { DeviceDetectorService } from "ngx-device-detector";
+declare function init_select();
 
 @Component({
   selector: "app-select",
@@ -8,6 +10,7 @@ import { LoginModels } from "./login.models";
   styleUrls: ["./select.component.css"]
 })
 export class SelectComponent implements OnInit {
+  isMobile = this.deviceService.isMobile();
   usuario: LoginModels = new LoginModels("", "", "", null);
   databases = [
     {
@@ -20,9 +23,13 @@ export class SelectComponent implements OnInit {
     }
   ];
 
-  constructor() {}
+  constructor(private deviceService: DeviceDetectorService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    setTimeout(() => {
+      init_select();
+    }, 1000);
+  }
 
   ingresar(form: NgForm) {
     console.log(this.usuario);
