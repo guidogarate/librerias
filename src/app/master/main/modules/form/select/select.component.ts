@@ -6,6 +6,16 @@ declare function init_select();
   styleUrls: ["./select.component.css"]
 })
 export class SelectComponent implements OnInit {
+  newDatabase = [
+    {
+      id: 1,
+      nombre: "base de datos pruebas"
+    },
+    {
+      id: 3,
+      nombre: "base de datos 1"
+    }
+  ];
   constructor() {}
 
   ngOnInit() {
