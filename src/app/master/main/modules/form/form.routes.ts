@@ -3,13 +3,14 @@ import { CheckRadiosComponent } from "./check-radios/check-radios.component";
 import { DateComponent } from "./date/date.component";
 import { ValidacionComponent } from "./validacion/validacion.component";
 import { SelectComponent } from "./select/select.component";
+import { TableComponent } from "./table/table.component";
 
 const formRoutes: Routes = [
   {
     // ok
     path: "check-radios",
     component: CheckRadiosComponent,
-    data: { titulo: "check" }
+    data: { titulo: "check-radios" }
   },
   {
     // cambiar por otro (para movil)
@@ -21,13 +22,19 @@ const formRoutes: Routes = [
     // ok
     path: "validacion",
     component: ValidacionComponent,
-    data: { titulo: "date" }
+    data: { titulo: "validacion" }
   },
   {
     // ok
     path: "select",
     component: SelectComponent,
-    data: { titulo: "date" }
+    data: { titulo: "select" }
+  },
+  {
+    // ok
+    path: "table",
+    component: TableComponent,
+    data: { titulo: "table" }
   }
 ];
 
