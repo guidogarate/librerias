@@ -9,7 +9,7 @@ const mainRoutes: Routes = [
   },
   {
     path: "",
-    redirectTo: "/components/form/table",
+    redirectTo: "/components/form/check-radios",
     pathMatch: "full"
   }
   // {
